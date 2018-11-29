@@ -1,11 +1,5 @@
-public class GoldenEagle {
+public  class GoldenEagle {
 
-    public GoldenEagle(){
-
-    }
-    public static void main(String[] args) {
-        convert(3998);
-    }
     public static String convert(int input){
         String romanValue="";
         int toConvert = input;
@@ -34,6 +28,11 @@ public class GoldenEagle {
                 while(toConvert >= 100){
                     romanValue+="C";
                     toConvert-=100;
+                    System.out.println(toConvert+" "+romanValue);
+                }
+                while (toConvert >= 90){
+                    romanValue+="L";
+                    toConvert-=50;
                     System.out.println(toConvert+" "+romanValue);
                 }
                 while (toConvert >= 50){
